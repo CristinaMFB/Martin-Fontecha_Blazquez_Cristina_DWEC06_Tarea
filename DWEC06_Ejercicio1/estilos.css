@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-top: 30px;
+}
+
+#contenedorPrincipal {
+    width: auto;
+    display: inline-block;
+    background-color: rgb(213, 208, 244);
+    border: 8px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    
+}
+#pantalla {
+    display: block;
+    width: 140px; 
+    font-size: 22px;
+    text-align: left;
+    padding: 6px;
+    margin-bottom: 15px;
+    background-color: white;
+    border: 5px inset black;
+    border-radius: 10px;
+}
+
+#contenedorBotones {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-gap: 12px;
+    justify-content: center;
+}
+
+#contenedorBotones button {
+    padding: 5px;
+    min-width: 40px; 
+    min-height: 55px;
+    font-size: 28px;
+    background-color: rgb(108, 152, 218);
+    border: 5px outset black;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#contenedorBotones .validar,
+#contenedorBotones .botonC{
+    font-size: 26px;
+    border: 5px outset black;
+    background-color: white;
+}
+
+#contenedorBotones .validar {
+    grid-column: span 2;
+}
+
+#mensaje { 
+    font-weight: bold; 
+    margin-top: 12px; 
+    text-align: center; 
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
